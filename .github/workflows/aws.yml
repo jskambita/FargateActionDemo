@@ -41,6 +41,7 @@ env:
                                       # containerDefinitions section of your task definition
 
 permissions:
+  id-token: write 
   contents: read
 
 jobs:
@@ -48,10 +49,10 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     environment: production
-    # These permissions are needed to interact with GitHub's OIDC Token endpoint.
-    permissions:
-      id-token: write
-      contents: read 
+    #These permissions are needed to interact with GitHub's OIDC Token endpoint.
+    #permissions:
+    #  id-token: write
+    #  contents: read 
     steps:
     - name: Checkout
       uses: actions/checkout@v3
