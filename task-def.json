@@ -22,7 +22,6 @@
             ]
         }
     ], 
-	"ExecutionRoleArn": "arn:aws:iam::423571248729:role/my-ecr-repo-role-fullaccess",
     "requiresCompatibilities": [
         "FARGATE"
     ], 

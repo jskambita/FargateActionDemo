@@ -60,7 +60,7 @@ jobs:
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        role-to-assume: arn:aws:iam::423571248729:role/my-ecr-repo-role-fullaccess
+        role-to-assume: arn:aws:iam::423571248729:role/my-ecr-repo-role-fullaccess2
         aws-region: ${{ env.AWS_REGION }}   
 
     - name: Login to Amazon ECR
