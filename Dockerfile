@@ -14,6 +14,6 @@ RUN echo 'Hello World!' > /var/www/html/index.html
 # echo '/usr/sbin/apache2 -D FOREGROUND' >> /root/run_apache.sh && \ 
 # chmod 755 /root/run_apache.sh
 
-#EXPOSE 80
-#CMD /root/run_apache.sh
-# 
+EXPOSE 80
+CMD /root/run_apache.sh
+ 
