@@ -26,6 +26,7 @@
         "FARGATE"
     ], 
 	"executionRoleArn": "arn:aws:iam::423571248729:role/my-repo-ecs-service-role",
+	"compatibility": "ecs.Compatibility.EXTERNAL",
     "cpu": "256", 
     "memory": "512"
 }
