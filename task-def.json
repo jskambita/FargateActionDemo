@@ -25,7 +25,7 @@
     "requiresCompatibilities": [
         "FARGATE"
     ], 
-	"executionRoleArn": "arn:aws:iam::423571248729:role/my-ecr-repo-role-fullaccess",
+	"executionRoleArn": "arn:aws:iam::423571248729:role/my-ecr-repo-role-fullaccess2",
     "cpu": "256", 
     "memory": "512"
 }
