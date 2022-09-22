@@ -3,7 +3,7 @@
     "networkMode": "awsvpc", 
     "containerDefinitions": [
         {
-            "name": "fargate-app", 
+            "image": "public.ecr.aws/docker/library/httpd:latest",
             "image": "httpd:2.4", 
             "portMappings": [
                 {
