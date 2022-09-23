@@ -16,6 +16,7 @@ FROM public.ecr.aws/docker/library/ubuntu:18.04
 
 #EXPOSE 80
 #CMD /root/run_apache.sh
+
 #  dasdsagdfgdsadsa  sdsadsad sdfsdfsdf sadasdasd saSasheifdgdfdfg
 #endring
 #endring
