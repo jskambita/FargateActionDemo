@@ -1,5 +1,5 @@
 {
-    "family": "fargate-task2", 
+    "family": "fargate-task", 
     "networkMode": "awsvpc", 
     "containerDefinitions": [
         {
@@ -18,7 +18,7 @@
 		"-c"
             ], 
             "command": [
-                "/bin/sh -c \"echo '<html> <head> <title>Amazon ECR and ECS Sample App</title> <style>body {margin-top: 40px; background-color: #333;} </style> </head><body> <div style=color:white;text-align:center> <h1>Amazon ECR and ECS Sample App</h1> <h2>Congratulations 2!</h2> <p>Your application is now running on a container in Amazon ECS.</p> </div></body></html>' >  /usr/local/apache2/htdocs/index.html && httpd-foreground\""
+                "/bin/sh -c \"echo '<html> <head> <title>My Amazon ECS App</title> <style>body {margin-top: 40px; background-color: #222;} </style> </head><body> <div style=color:white;text-align:center> <h1>My Amazon ECS App</h1> <h2>Grattis!</h2> <p>Your application is now running on a container in Amazon ECS.</p> </div></body></html>' >  /usr/local/apache2/htdocs/index.html && httpd-foreground\""
             ]
         }
     ], 
