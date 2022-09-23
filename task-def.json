@@ -1,5 +1,5 @@
 {
-    "family": "fargate-task", 
+    "family": "fargate-task2", 
     "networkMode": "awsvpc", 
     "containerDefinitions": [
         {
