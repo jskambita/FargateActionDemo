@@ -60,7 +60,7 @@ jobs:
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        role-to-assume: arn:aws:iam::423571248729:role/my-ecr-repo-role-fullaccess
+        role-to-assume: arn:aws:iam::423571248729:role/my-github-ecr-role
         aws-region: ${{ env.AWS_REGION }}   
 
     - name: Login to Amazon ECR
@@ -79,14 +79,6 @@ jobs:
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
-        
-        #From localhost:
-        #aws ecr get-login-password --profile jsk-sandbox1 --region eu-west-1 | docker login --username AWS --password-stdin 423571248729.dkr.ecr.eu-west-1.amazonaws.com
-        #docker build -t my-ecr-repo .
-        #docker tag my-ecr-repo:latest 423571248729.dkr.ecr.eu-west-1.amazonaws.com/my-ecr-repo:latest
-        #docker push 423571248729.dkr.ecr.eu-west-1.amazonaws.com/my-ecr-repo:latest
-        
-
     - name: Fill in the new image ID in the Amazon ECS task definition
       id: task-def
       uses: aws-actions/amazon-ecs-render-task-definition@v1
